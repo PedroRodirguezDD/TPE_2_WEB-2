@@ -143,7 +143,7 @@ class Controller{
     function addCancion($params=null){
         $cancion=$this->getData();
         if(!empty($cancion->nombre) && !empty($cancion->anio) && !empty($cancion->genero) && !empty($cancion->artista_id)){
-            if($cancion->artista_id == 1 || $cancion->artista_id == 2){
+            if($cancion->artista_id == 1 || $cancion->artista_id == 2 || $cancion->artista_id == 14){
                 $this->model->addCancion($cancion->nombre,$cancion->anio,$cancion->genero,$cancion->artista_id);
                 $this->view->response("La tarea se añadio correctamente",201);
             }
