@@ -11,8 +11,7 @@ Este archivo README.md  va a tener la descripcion de los endpoint , como se util
 
 ## GET
 #####  url = http://localhost/TPE2/api/canciones
-Metodo= GET
-Url=http://localhost/TPE2/api/canciones
+Metodo= GET , Url=http://localhost/TPE2/api/canciones
 
 - Con el metodo get y la url que se encuentra aca arriba vamos a listar la coleccion de entidades que se encuentran en mi tabla
 - *Ejemplo* = http://localhost/TPE2/api/canciones
@@ -48,8 +47,7 @@ Url=http://localhost/TPE2/api/canciones
 
 ## GET/:ID
 #####  url = http://localhost/TPE2/api/canciones/ID
-Metodo= GET
-Url=http://localhost/TPE2/api/canciones/ID
+Metodo= GET , Url=http://localhost/TPE2/api/canciones/ID
 
 - Con el metodo get y la url que se encuentra aca arriba vamos a traer el elemento de la tabla que tenga el id que mandamos.  Los elementos que la tabla tiene incluidos ahora tienen los siguientes **id** = **3** , **11** , **12** y **15**. En el caso de agregar mas elementos revisar tabla para ver que id tiene los nuevos.
 - *Ejemplo* = http://localhost/TPE2/api/canciones/3
@@ -59,12 +57,11 @@ Url=http://localhost/TPE2/api/canciones/ID
 
 ## POST
 #####  url = http://localhost/TPE2/api/canciones
-Metodo= POST
-Url=http://localhost/TPE2/api/canciones
+Metodo= POST , Url=http://localhost/TPE2/api/canciones
 
 - Con el metodo POST y la url que se encuentra aca arriba vamos a poder subir un elemento nuevo a la tabla. Para eso en el body de postman se debe introducir una estructura igual a esta, 
 Ej:
-{
+-{
     "nombre":"ejemplo",
     "anio":2022,
     "genero":"rock",
@@ -75,7 +72,7 @@ Ej:
 - En el caso del campo **artista_id** solo se van a introducir los siguientes valores : **1** , **2** y **14**. Ya que estos son los id de los elementos de la tabla artista a la cual esta conectada. Si no se pone alguna de estas opciones no dejara agregar el elemento.
 
 - *Ejemplo* = http://localhost/TPE2/api/canciones
-{
+-{
     "nombre":"ejemplo",
     "anio":ejemplo,
     "genero":"ejemplo",
@@ -86,18 +83,17 @@ Ej:
 
 ## PUT
 #####  url = http://localhost/TPE2/api/canciones/:ID
-Metodo= PUT
-Url=http://localhost/TPE2/api/canciones/:ID
+Metodo= PUT , Url=http://localhost/TPE2/api/canciones/:ID
 
 - Con el metodo PUT y la url que se encuentra aca arriba vamos a poder editar el campo **comentario** del elemento que tenga el **ID** que le pasamos. Para eso en el body de postman se debe introducir una estructura igual a esta, 
 Ej:
-{
+-{
     "comentario":"ejemplo de comentario"
 }
 
 - El campo **comentario** empieza con valor null. Se va a poder editar simulando un agregar comentario a la cancion seleccionada por su **ID** los valores de los id pueden ser **id** = **3** , **11** , **12** y **15**.En el caso de agregar mas elementos revisar tabla para ver que id tiene los nuevos.
 
 - *Ejemplo* = http://localhost/TPE2/api/canciones/11
-{
+-{
     "comentario":"ejemplo"
 }
