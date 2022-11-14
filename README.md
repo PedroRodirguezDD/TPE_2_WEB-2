@@ -65,8 +65,7 @@ Ej:
     "nombre":"ejemplo",
     "anio":2022,
     "genero":"rock",
-    "artista_id":1  
-}
+    "artista_id":1 }
 
 - Se deben completar todos los campos que se muetran en este ejemplo para que agregar un elemento corretamente, tambien se puede agregar el campo **comentario** en el que su valor va a ser un comentario para la cancion, si no se agrega no pasa nada ya que su valor inicial es null.
 - En el caso del campo **artista_id** solo se van a introducir los siguientes valores : **1** , **2** y **14**. Ya que estos son los id de los elementos de la tabla artista a la cual esta conectada. Si no se pone alguna de estas opciones no dejara agregar el elemento.
@@ -76,8 +75,7 @@ Ej:
     "nombre":"ejemplo",
     "anio":ejemplo,
     "genero":"ejemplo",
-    "artista_id":2  
-}
+    "artista_id":2 }
 
 [========]
 
