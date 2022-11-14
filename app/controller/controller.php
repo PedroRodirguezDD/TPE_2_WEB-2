@@ -71,7 +71,7 @@ class Controller{
             if(isset($_GET['orden'])){
                 $orden=$_GET['orden'];
 
-                if($orden=='nombre' || $orden=='id' || $orden=='anio' || $orden=='genero' || $orden=='comentario'){
+                if($orden=='nombre' || $orden=='id' || $orden=='anio' || $orden=='genero' || $orden=='comentario' || $orden=='artista_id_fk'){
 
                     if(isset($_GET['forma'])){
 
