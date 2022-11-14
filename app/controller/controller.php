@@ -114,7 +114,7 @@ class Controller{
             $this->view->response($cancion,200);
         }
         else{
-            $this->view->response("No existe ninguna cancion con este id:$id ",400);
+            $this->view->response("No existe ninguna cancion con este id:$id ",404);
         }
     }
 
@@ -135,7 +135,7 @@ class Controller{
             }
         }
         else{
-            $this->view->response("No puedes agregar comentario ya que no hay canciones con este id:$id ",400);
+            $this->view->response("No puedes agregar comentario ya que no hay canciones con este id:$id ",404);
         }
     }
     
